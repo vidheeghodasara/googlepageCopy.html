@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <title>Bootstrap Theme</title>
+
+  <script>
+    
+   
+  </script>
+ 
+  <style>
+       #searchBox{
+        padding: 10px;
+        border: solid 1px rgba(0,0,0,0.1);
+        border-radius: 50px;
+        box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.05), 0 12px 12px 0 rgba(0, 0, 0, 0.05);
+        text-align: right; 
+       }
+       #cancelIcon{
+        margin-right: 10px;
+        padding-right: 15px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        border-right: solid 2px rgba(0,0,0, 0.2);
+       }
+       #voiceIcon{
+      
+        margin-right: 10px;
+
+       }
+       #searchIcon{
+        margin-right: 10px;
+       }
+       #mainIcon{
+        text-align: right;
+       }
+       #googleIcon{
+        margin-left: 15px;
+        font-size:30px;
+        background-color: grey;
+        color: white;
+        border-radius: 50%;
+        padding-top: 1px;
+        padding-bottom: 5px;
+        padding-right: 13px;
+        padding-left: 13px;
+       }
+       #appIcon{
+        margin-left: 15px;
+       }
+       #menuBox{
+        margin-left: 20px;
+        margin-top: 20px;
+        margin-bottom: 15px;
+       }
+       .menuItem{
+        padding-right: 15px;
+       }
+       #tools{
+        margin-left: 140px;
+       }
+       #fullBorder{
+        border-bottom: solid 1px rgba(0,0,0,0.1);
+       }
+
+  </style>
+
+  </style>
+</head>
+
+<body>
+   
+
+
+  
+   <!--cards-->
+
+
+   <div class="row">
+        <div class="col-sm-1 mt-4 ml-4" id="logo">
+             <h2>Google</h2>
+        </div>
+        <div class="col-sm-6 mt-4 ml-4">
+             <div id="searchBox">
+                 
+                    
+                            <span id="cancelIcon"><img src="images/cancel.png" alt="" class="img-fluid"></span>
+                      
+                      
+                             <span id="voiceIcon"><img src="images/voice (1).png" alt="" class="img-fluid"></span>
+                      
+                      
+                             <span id="searchIcon">&#128269;</span>
+                    
+                            
+                    
+                
+             </div>
+             <div id="menuBox">
+                             <span class="menuItem">&#128269; All</span>
+                             <span class="menuItem">&#128269; News</span>
+                             <span class="menuItem">&#128269; Images</span>
+                             <span class="menuItem">&#128269; Maps</span>
+                             <span class="menuItem">&#128269; Videos</span>
+                             <span class="menuItem">&#128269; More</span>
+                             <span id="tools"> Tools</span>
+               
+             </div>
+             
+        </div>
+        <div class="col-sm-4 mt-4">
+               <div id="mainIcon">
+                 
+                    
+                            <span id="settinglIcon"><img src="images/settings.png" alt="" class="img-fluid"></span>
+                      
+                      
+                             <span id="appIcon"><img src="images/show-apps-button.png" alt="" class="img-fluid"></span>
+                      
+                      
+                             <span id="googleIcon">v</span>
+                    
+                            
+                    
+                
+             </div>
+             
+        </div>
+        <div class="col-sm-12">
+                    <div id="fullBorder">
+          
+                    </div>
+        </div>
+       
+   </div>
+
+   
+
+
+
+  <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+    crossorigin="anonymous"></script>
+
+  <script>
+    // Get the current year for the copyright
+    $('#year').text(new Date().getFullYear());
+
+    // Init Scrollspy
+    $('body').scrollspy({ target: '#main-nav' });
+
+    // Smooth Scrolling
+    $("#main-nav a").on('click', function (event) {
+      if (this.hash !== "") {
+        event.preventDefault();
+
+        const hash = this.hash;
+
+        $('html, body').animate({
+          scrollTop: $(hash).offset().top
+        }, 800, function () {
+
+          window.location.hash = hash;
+        });
+      }
+    });
+  </script>
+</body>
+
+</html>
